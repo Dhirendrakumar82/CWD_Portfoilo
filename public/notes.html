@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CWD Learning Hub</title>
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      :root {
+        --blue: #006cff;
+        --blue-light: #00bfff;
+
+        --yellow: #ffd900;
+        --yellow-light: #fff200;
+
+        --navy: #020817;
+        --navy-2: #07132d;
+
+        --white: #ffffff;
+        --gray: #9ba8bd;
+
+        --border: rgba(0, 108, 255, 0.25);
+
+        --font: "Inter", sans-serif;
+        --mono: "JetBrains Mono", monospace;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        /* background-color: var(--navy); */
+        background: linear-gradient(135deg, #020617, #0f172a, #111827);
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 80%;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+      .container nav {
+        width: 78%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        background: rgba(2, 8, 23, 0.9);
+        color: #fff;
+        padding: 10px;
+        margin: 20px 0;
+        text-align: center;
+        margin-bottom: 20px;
+        z-index: 1;
+        border-radius: 16px;
+        border: 1px solid var(--yellow);
+      }
+
+      .container header {
+        text-align: center;
+        margin: 130px 0 50px 0;
+        background: var(--navy-2);
+        padding: 20px;
+        border-radius: 16px;
+        border: 1px solid var(--border);
+      }
+      .container header h1 {
+        font-size: 3.5rem;
+        font-weight: 800;
+        background: linear-gradient(90deg, var(--blue), var(--yellow));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+      }
+      .container header p {
+        font-size: 1.2rem;
+        color: var(--gray);
+        margin-bottom: 10px;
+      }
+      .container nav button {
+        background-color: var(--yellow);
+        color: var(--navy);
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: 0.3s;
+      }
+      .container nav button:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(255, 217, 0, 0.25);
+      }
+      .container .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-bottom: 50px;
+      }
+      .container .main .card {
+        background-color: var(--navy-2);
+        border: 1px solid var(--border);
+        padding: 20px;
+        text-align: center;
+        border-radius: 16px;
+        transition: 0.4s;
+      }
+
+      .container .main .card:hover {
+        transform: translateY(-8px);
+
+        border-color: var(--yellow);
+      }
+      .container .main .card h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: var(--white);
+        font-size: 50px;
+      }
+      .container .main .card p {
+        font-size: 24px;
+        color: var(--gray);
+        margin-bottom: 20px;
+      }
+      .container .main .card a {
+        display: inline-block;
+        padding: 14px 22px;
+        border-radius: 8px;
+        background-color: var(--yellow);
+        color: var(--navy);
+        font-family: var(--mono);
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: bold;
+
+        transition: 0.3s;
+      }
+      .container .main .card a:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(255, 217, 0, 0.25);
+      }
+
+      .container .main .card img {
+        border-radius: 50%;
+        border: 2px solid var(--yellow);
+        padding: 12px;
+        box-shadow: inset 0 0 10px rgba(255, 217, 0, 0.5);
+      }
+
+      @media (max-width: 768px) {
+        .container .main {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <img src="assets/img/logo.png" alt="Logo" width="120" />
+        <button onclick="window.location.href = '/'">Back to Home</button>
+      </nav>
+      <header>
+        <h1>Code With Dhirendra Learning Hub</h1>
+        <p>
+          Welcome to Code With Dhirendra  Learning Hub—your one-stop destination for
+          learning programming through high-quality notes, source code,
+          step-by-step tutorials, and real-world projects.
+        </p>
+        <p>
+          Whether you're a beginner or an aspiring developer, you'll find
+          practical examples, coding resources, and hands-on learning materials
+          designed to help you build strong programming skills and gain
+          real-world experience.
+        </p>
+      </header>
+      <div class="main">
+        <div class="card">
+          <img
+            src="assets/img/C++ (CPlusPlus).png"
+            alt="C++ Logo"
+            width="100"
+            height="100"
+          />
+
+          <h1>CPP Notes</h1>
+          <p>These are my notes on C++ programming.</p>
+          <a href="assets/courses/cpp_notes.html" target="_blank">View Notes</a>
+        </div>
+
+        <div class="card">
+          <img
+            src="assets/img/Python.png"
+            alt="Python Logo"
+            width="100"
+            height="100"
+          />
+          <h1>Python Notes</h1>
+          <p>These are my notes on Python programming.</p>
+          <a href="assets/courses/python.html" target="_blank">View Notes</a>
+        </div>
+
+        <div class="card">
+          <img
+            src="assets/img/NumPy.png"
+            alt="NumPy Logo"
+            width="100"
+            height="100"
+          />
+          <h1>NumPy Notes</h1>
+          <p>These are my notes on NumPy.</p>
+          <a href="assets/courses/numpy_notes.html" target="_blank"
+            >View Notes</a
+          >
+        </div>
+
+        <div class="card">
+          <img
+            src="assets/img/Pandas.png"
+            alt="Pandas Logo"
+            width="100"
+            height="100"
+          />
+          <h1>Pandas Notes</h1>
+          <p>These are my notes on Pandas.</p>
+          <a href="assets/courses/pandas_notes.html" target="_blank"
+            >View Notes</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
