@@ -150,7 +150,7 @@ function App() {
             </div>
 
             <div className="command-box reveal">
-              <div className="command"><span>aasif@dev:~$</span> whoami</div>
+              <div className="command"><span>Dhirendra@dev:~$</span> whoami</div>
               <div className="output">
                 Python Full Stack Developer<br />
                 MCA Student<br />
@@ -159,7 +159,7 @@ function App() {
                 Continuous Learner
               </div>
               <br />
-              <div className="command"><span>aasif@dev:~$</span> status</div>
+              <div className="command"><span>Dhirendra@dev:~$</span> status</div>
               <div className="output">Open to exciting opportunities 🚀</div>
             </div>
           </div>
